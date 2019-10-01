@@ -1,0 +1,40 @@
+// Place all the styles related to the reis controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.language-text {
+  display: none;
+}
+
+.message-wrapper {
+  background-color: rgb(70, 176, 247);
+  height:400px;
+  padding:100px 0 10px 30px;
+  color:white;
+  text-align: center;
+  margin: 50px;
+}
+
+.faq-list {
+  width:500px;
+  margin:0 auto;
+  padding:0;
+  list-style: none;
+}
+.faq-list-item {
+  margin-bottom:10px;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:20px;
+  margin:0;
+  font-size:13px;
+}
+
+.answer {
+  display:none;
+}

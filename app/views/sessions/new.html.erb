@@ -1,0 +1,56 @@
+<% if @user %>
+  <% if @user.errors.present? %>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li class="uk-alert uk-alert-warning"><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
+<h1>Log in</h1>
+<header>
+    <div class="container">
+        <div class="header-left">
+            <span>人生</span>
+        </div>
+
+
+    </div>
+</header>
+
+<%= form_with(scope: :session, url: sessions_path, local: true) do |f| %>
+
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <a><%= f.submit "ログイン", class: "btn login"%></a>
+<% end %>
+
+
+
+
+<div class="top-wrapper">
+    <div class="theme">
+        <h1 class="line1">人生の正解を</h1>
+        <h1 class="line2">創造する</h1>
+    </div>
+
+</div>
+
+<div class="message-wrapper">
+    <ul class="faq-list">
+        <li class="faq-list-item">
+            <h3>人生を変える</h3>
+        </li>
+        <li class="faq-list-item">
+            <h3>このチャンスを行かせ！</h3>
+
+        </li>
+        <li class="faq-list-item">
+            <h3>君ならできる</h3>
+        </li>
+    </ul>
+</div>

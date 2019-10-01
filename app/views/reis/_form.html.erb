@@ -1,0 +1,22 @@
+<%= form_with(model: rei, local: true) do |form| %>
+  <% if rei.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(rei.errors.count, "error") %> prohibited this rei from being saved:</h2>
+
+      <ul>
+      <% rei.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Rei < ApplicationRecord
+end
